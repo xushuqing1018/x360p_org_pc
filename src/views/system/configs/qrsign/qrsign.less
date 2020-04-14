@@ -1,0 +1,186 @@
+input::-webkit-input-placeholder {
+    color: #CCCCCC;
+    font-size: 14px;
+}
+
+.x-msg-container{
+    padding: 36px;
+    text-align: center;
+    .icon-area{
+        margin-bottom: 30px;
+    }
+    .text-area{
+        margin-bottom: 25px;
+        padding: 0 20px;
+        .title{
+            margin-bottom: 5px;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .desc{
+            font-size: 14px;
+            color: #999999;
+        }
+    }
+    
+}
+
+.x-radio{
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    margin-right: 8px;
+    cursor: pointer;
+    
+        
+    .x-radio-icon{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        position: relative;
+        top: 2px;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #dddee1;
+        border-radius: 50%;
+        transition: all .2s ease-in-out;
+        box-sizing: border-box;    
+        &:after{
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: 2px;
+            top: 2px;
+            border-radius: 6px;
+            display: table;
+            border-top: 0;
+            border-left: 0;
+            content: " ";
+            background-color: #2d8cf0;
+            opacity: 0;
+            transition: all .2s ease-in-out;            
+            transform: scale(0);
+        }
+    }
+    
+    &.checked{
+        .x-radio-icon{
+            border-color: #2d8cf0;
+            &:after{
+                opacity: 1;
+                transform: scale(1);
+                transition: all .2s ease-in-out;
+            }
+        }
+    }
+}
+
+.x-container{
+    width: 375px;
+    height: 667px;
+    overflow: auto;
+    background: #fff;
+    border: 1px solid #eee;
+    
+    .bg-header{
+        img {
+            width: 100%;
+        }
+    }
+    .x-content{
+        text-align: center;
+        .x-btn-submit{
+            margin-top: 20px;
+        }
+        .logo{
+            margin-bottom: 45px;   
+            max-width:140px;
+            max-height:40px;
+        }
+        
+        .x-form{
+            width: 100%;
+            height: auto;
+            
+            .form-title{
+                text-align: center;
+                font-size: 18px;
+                color: #3998FF;
+                padding: 15px 0;
+                border-bottom: 1px solid #3998FF;
+                .desc{
+                    font-size: 12px;
+                    color: #AAAAAA;
+                }
+            }
+            
+            .form-body{
+                padding: 30px 70px;
+                
+                .x-divider{
+                    position: relative;
+
+                    &:before{
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        background: #eee;
+                        position: absolute;
+                        top: 10px;
+                        left: 0;
+                    }
+                    span{
+                        display: inline-block;
+                        background: #fff;
+                        padding: 0 10px;
+                        position: relative;                     
+                        font-size: 14px;
+                        color: #aaaaaa;
+                    }
+                   
+                }
+                
+                .form-item{             
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    margin-bottom: 18px;
+                    
+                    &:nth-last-child(1){
+                        margin-bottom: 0;
+                    }
+                    
+                    .form-item-label{
+                        width: 62px;
+                        font-size: 14px;
+                        color: #525252;
+                        text-align: right;
+                        line-height: 25px;
+                        margin-top: 2px;
+                        margin-bottom: 0 !important;
+                    }
+                    .form-item-content{
+                        flex: 1;
+                        margin-left: 12px;
+                        .x-input {
+                            border: none;
+                            border-bottom: 1px solid #eeeeee;
+                            width: 100%;
+                            outline: none;
+                            color: #525252;
+                            padding: 0 5px;
+                            height: 25px;
+                            line-height: 25px;
+                            border-radius: 0;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,290 @@
+@import './mixin.less';
+.cursor{
+	cursor:pointer;
+}
+.m-r{
+	margin-right:15px;
+}
+.m-r-xs{
+	margin-right:5px;
+}
+.m-l-xs{
+	margin-left:3px;
+}
+.page{
+	background:#fff;
+	padding:5px;
+}
+.c-grid{
+	padding: 10px;
+	.box{
+		background:#fff;
+		padding:10px;
+		margin-bottom:10px;
+		.rounded(5px);
+		.drop-shadow();
+		.ivu-btn{
+			padding:2px 5px;
+			>span+.ivu-icon,
+			>.ivu-icon+span{
+				margin-left:2px;
+			}
+		}
+	}
+
+	.box-query{
+		.ivu-col{
+			> .ivu-btn{
+				margin-left:5px;
+				margin-top:1px;
+			}
+		}
+		.input-search{
+			.ivu-input-group-append{
+				> .ivu-btn{
+					color:#fff;
+					padding:2px 8px;
+				}
+			}
+			.ivu-input-group-append{
+				padding-right:2px;
+				padding-left:2px;
+				background: #3399ff;
+				border:none;
+			}
+			.ivu-btn-group{
+				width:50px;
+				.ivu-btn{
+					color:#fff;
+				}
+			}
+			.btn-search{
+				.ivu-icon{
+					font-size:14px;
+				}
+			}
+			.btn-toggle-advance{
+				margin-left:10px;
+				.ivu-icon{
+					font-size:6px;
+					font-weight:normal;
+				}
+				
+			}
+			.btn-toggle-advance:before{
+				content:' ';
+				display:block;
+				width:1px;
+				height:14px;
+				border-left:1px dashed #fff;
+				position:absolute;
+				left:-3px;
+				top:4px;
+				
+			}
+			
+		}
+		.advance{
+			margin-top:10px;
+		}
+		
+		
+	}
+
+	.box-result{
+		.toolbar{
+			margin-bottom:10px;
+			.clearfix();
+
+			.filter-column{
+				float:right;
+				position:relative;
+				
+			}
+			h6{
+				vertical-align: middle;
+				display: inline;
+				margin-bottom: 0;
+			}
+		}
+
+		.content{
+			.content-footer{
+				margin-top:15px;
+				margin-bottom:10px;
+				.clearfix();
+
+				> .pagenation{
+					float:right;
+				}
+			}
+			.content-body {
+				.ivu-dropdown-item {
+					font-weight: bold;
+				}
+			}
+		}
+
+		.rel {
+			postion: relative;
+		}
+
+		.demo-spin-icon-load{
+		    animation: ani-demo-spin 1s linear infinite;
+		}
+
+		@keyframes ani-demo-spin {
+		    from { transform: rotate(0deg);}
+		    50%  { transform: rotate(180deg);}
+		    to   { transform: rotate(360deg);}
+		}
+	}
+}
+.table{
+	th,td{
+		label{
+			margin-bottom:0
+		}
+	}
+}
+.ivu-modal-body img {
+	margin: 0 auto;
+}
+
+.new-form {
+	background:#fff;
+	padding:10px 5px;
+	margin-bottom:10px;
+	.rounded(5px);
+	.drop-shadow();
+	.commit-btn{
+		margin-top:15px;
+		background:#fff;
+		border-top:1px solid #f2f2f2;
+		padding:10px 0 10px 120px;
+		text-align:left;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.ivu-form.filter-form {
+	.ivu-row {
+		height: 30px;
+
+		.ivu-select-selection {
+			border: none;
+			border-bottom: 1px solid #d7dde4;
+			border-radius: 0;
+			box-shadow: 0 0 0 0 #fff;
+		}
+		.ivu-select-dropdown {
+			border: 1px solid rgba(51,153,255,.9);
+			margin: 0;
+		}
+		.ivu-form-item-label {
+			font-weight: normal !important;
+			padding-left: 5px;
+			width: auto !important;
+			padding-right: 0 !important
+		}
+		.ivu-form-item-content {
+//			margin-left: 50px !important;
+		}
+	}
+	.ivu-form-item {
+		margin-bottom: 0 !important;
+	}
+}
+.goods-table {
+//	border-bottom: 1px solid #cfd8dc;
+	width: 100%;
+	max-width: 100%;
+	background-color: transparent;
+	margin-bottom: 10px;
+	thead {
+		background-color: #c7e3ff;
+		color: #356fbe;
+		th {
+			border-bottom: 1px solid #cfd8dc;
+		}
+	}
+	tbody td,
+	tfoot td,
+	thead th {
+		padding: 0.75rem;
+    	vertical-align: middle;
+	}
+	tbody tr {
+		&:hover {
+			background-color: #ebf7ff !important;
+		}
+		&:nth-child(2n) {
+			background-color: #f5f7f9;
+		}
+	}
+}
+.dashed {
+	height: 1px;
+    background: linear-gradient(to right, #2e88d1, #2e88d1 10px, transparent 10px, transparent);
+    background-size: 20px 100%;
+}
+// 偶数行样式
+.table-tr-even {
+	background-color: #f5f7f9 !important;
+}
+// 奇数行样式
+.table-tr-odd {
+	background-color: #fff !important;
+}
+.m-tb{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.m-t-25 {
+	margin-top: 25px;
+}
+.m-t-20 {
+	margin-top: 20px;
+}
+.m-t-15 {
+	margin-top: 15px;
+}
+.m-t-10 {
+	margin-top: 10px;
+}
+.m-t-5 {
+	margin-top: 5px;
+}
+.m-b-15{
+	margin-bottom:15px;
+}
+.tree-color {
+	color: #ef0101;
+}
+
+::-webkit-scrollbar {
+	z-index: 11;
+	width: 6px;
+
+	&-thumb {
+	  border-radius: 5px;
+	  width: 8px;
+	  background: rgba(144, 147, 153, 0.3);
+	}
+
+	&-corner {
+	  background: #fff;
+	}
+
+	&-track {
+	  background: #fff;
+
+	  &-piece {
+	    background: #fff;
+	    width: 8px;
+	  }
+	}
+}
